@@ -1,45 +1,195 @@
-body{
-    color: #ff0000;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-h1{
-    text-align: center;
-    font-size: 40px;
-}
-p{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-    /* text-decoration: line-through; */
-    /* text-transform: capitalize; */
-    /* word-spacing: 2px; */
-}
-h2{
-    color: rgb(226, 43, 144);
-    font-style: oblique;
-    line-height: 50px;
-}
-h3{
-    color: black;
-    font-weight: 800;
-}
-ul{
-    color: rgb(255, 0, 0);
-}
-img{
-    width: 100%;
-    border-radius: 10px;
-    filter: brightness(200%);
-    filter: opacity(100%);
-    /* filter: saturate(60%); */
-    filter: contrast(130%);
-    /* filter: drop-shadow(10px 10px 5px); */
-    /* filter: grayscale(50%); */
-}
-div{
-    width: 50%;
-    height: auto;
-    background-color: black;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+html{
+    font-family: 'Inter', sans-serif;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 20px 2px #ED165B;
+    background-color: #212121;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+body{
+    background-image: url(../imagem/background.jpeg);
+}
+.fintech{
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ED165B;
+}
+.subt{
+    font-size: 35px;
+    font-weight: 500px;
+    color: #ED165B;
+}
+ul a{
+    margin-left: 30px;
+    transition: 1s;
+    text-decoration: none;
+    color: white;
+}
+ul a:hover{
+    font-size: 5rem;
+    color: #ED165B;
+}
+#imagem{
+    width: 90%;
+    height: 500px;
+    margin: 190px 100px 30px 100px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .3)), url(../imagem/moeda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 7px;
+}
+.texto{
+    font-size: 45px;
+    margin: 30px 40px;
+    color: white;
+}
+.lorem{
+    margin: 50px 40px 130px;
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding: 2px;
+    line-height: 1.5;
+}
+.link{
+    margin:50px;
+    text-decoration: none;
+    border: 2px solid #ED165B;
+    background-color: #ED165B;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.link:hover{
+    background-color:transparent;
+    color: #ED165B;
+}
+.container-pai{
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container{
+    width: 31%;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    background-position: center center;
+    margin: 15px;
+    border-radius: 7px;
+}
+.container.div1 {
+    position: relative; 
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(../imagem/celular.jpeg);
+}
+.container.div1 h2{
+    font-size: 30px;
+    color: white;
+    text-align: justify; 
+    margin: 0; 
+    padding: 30px;
+}
+.container.div1 p{
+    font-size: 18px;
+    color: white;
+    margin: -20px 30px;
+    text-align: justify;
+}
+.baixe{
+    margin: 0px;
+    text-decoration: none;
+    border: 2px solid #ED165B;
+    background-color: #ED165B;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 30px; 
+    left: 30px;
+}
+.baixe:hover{
+    background-color:transparent;
+    color: #ED165B;
+}
+.div2{
+    background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/dinheiro.jpg);
+}
+.container.div2 h2{
+    font-size: 30px;
+    color: white;
+    text-align: justify; 
+    margin: 0; 
+    padding: 30px;
+}
+.container.div2 p{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    margin: -20px 30px;
+}
+.container.div3{
+    background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/lapis.jpg);
+}
+.container.div3 h2{
+    font-size: 30px;
+    color: white;
+    text-align: justify; 
+    margin: 0; 
+    padding: 30px;
+}
+.container.div3 p{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    margin: -20px 30px;
+}
