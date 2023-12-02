@@ -50,6 +50,22 @@ header{
 body{
     background-image: url(../imagem/background.jpeg);
 }
+p::selection{
+    background-color: #ED165B;
+    color: white;
+}
+h1::selection{
+    background-color: #ED165B;
+    color: white;
+}
+h2::selection{
+    background-color: #ED165B;
+    color: white;
+}
+a::selection{
+    background-color: #ED165B;
+    color: white;
+}
 .fintech{
     font-size: 70px;
     font-weight: 700;
@@ -131,6 +147,10 @@ ul a:hover{
     position: relative; 
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(../imagem/celular.jpeg);
 }
+.container.div1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/celular.jpeg);
+    transition: 2s;
+}
 .container.div1 h2{
     font-size: 30px;
     color: white;
@@ -161,8 +181,12 @@ ul a:hover{
     background-color:transparent;
     color: #ED165B;
 }
-.div2{
+.container.div2{
     background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/dinheiro.jpg);
+}
+.container.div2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/dinheiro.jpg);
+    transition: 2s;
 }
 .container.div2 h2{
     font-size: 30px;
@@ -179,6 +203,10 @@ ul a:hover{
 }
 .container.div3{
     background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/lapis.jpg);
+}
+.container.div3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/lapis.jpg);
+    transition: 2s;
 }
 .container.div3 h2{
     font-size: 30px;
