@@ -1,3 +1,5 @@
+/* Resete pego na internet */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -6,33 +8,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
 ol, ul {
     list-style: none;
 }
-
 blockquote, q {
     quotes: none;
 }
-
 blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
+
+/* Formatação da fontes dentro do html todo */
+
 html {
     font-family: 'Inter', sans-serif;
 font-family: 'Kdam Thmor Pro', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
+
+/* Selection de texto */
+
+p::selection,
+h1::selection,
+h2::selection,
+a::selection,
+li::selection {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+/* Cabeçalho */
+
 header{
     width: 100%;
     height: 130px;
@@ -47,28 +61,33 @@ header{
     border-bottom-left-radius: var(--space-7);
     border-bottom-right-radius: var(--space-7);
 }
+
+/* Background */
+
 body{
     background-image: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .4)), url(../imagem/background.jpeg);
+    background-size: cover;
 }
-p::selection,
-h1::selection,
-h2::selection,
-a::selection,
-li::selection {
-    background-color: var(--bg-color);
-    color: white;
-}
+
+/* Titulo da página */
+
 .fintech{
     font-size: 70px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--bg-color);
 }
+
+/* Subtitulo */
+
 .subt{
     font-size: 35px;
     font-weight: 500;
     color: var(--bg-color);
 }
+
+/* Login e senha */
+
 ul a{
     margin-left: 30px;
     transition: 1s;
@@ -79,10 +98,13 @@ ul a:hover{
     font-size: 5rem;
     color: var(--bg-color);
 }
+
+/* Imagem das moedas */
+
 #imagem{
     width: 90%;
     height: var(--space-500);
-    margin: 90px 100px 30px 100px;
+    margin: 30px auto;
     padding: 30px 0;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .3)), url(../imagem/moeda.jpg);
@@ -91,11 +113,15 @@ ul a:hover{
     background-position: 50%;
     border-radius: 7px;
 }
+
+/* Texto principal da imagem da moeda */
 .texto{
     font-size: 45px;
     margin: 30px 40px;
     color: white;
 }
+
+/* Texto segundario da imagem da moeda */
 .lorem{
     margin: 50px 40px 130px;
     width: 50%;
@@ -105,6 +131,8 @@ ul a:hover{
     padding: 2px;
     line-height: 1.5;
 }
+
+/* Botão saiba mais na imagem da moeda */
 .link{
     margin:50px;
     text-decoration: none;
@@ -119,13 +147,18 @@ ul a:hover{
     background-color:transparent;
     color: var(--bg-color);
 }
+
+/* Formatação dos container-pai */
+
 .container-pai{
-    margin-left: 130px;
-    margin-right: 130px;
+    margin: 1% 5%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/* Formatação dos 3 containers */
+
 .container{
     width: 31%;
     height: var(--space-500);
@@ -135,6 +168,8 @@ ul a:hover{
     margin: 15px;
     border-radius: 7px;
 }
+
+/* Primeiro container (Imagem: Celular) */
 .container.div1 {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(../imagem/celular.jpeg);
 }
@@ -142,6 +177,8 @@ ul a:hover{
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/celular.jpeg);
     transition: 2s;
 }
+
+/* Texto titulo do primeiro container */
 .container.div1 h2{
     font-size: 30px;
     color: white;
@@ -149,6 +186,8 @@ ul a:hover{
     margin: 0; 
     padding: 30px;
 }
+
+/* Texto informativo do primeiro container */
 .container.div1 p{
     font-size: 18px;
     color: white;
@@ -156,6 +195,8 @@ ul a:hover{
     text-align: justify;
     margin-bottom: 290px;
 }
+
+/* Botão link para download do primeiro container */
 .container.div1 a{
     text-decoration: none;
     border: 2px solid var(--bg-color);
@@ -170,6 +211,8 @@ ul a:hover{
     background-color:transparent;
     color: var(--bg-color);
 }
+
+/* Segundo container (Imagem: Notas) */
 .container.div2{
     background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/dinheiro.jpg);
 }
@@ -177,6 +220,8 @@ ul a:hover{
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/dinheiro.jpg);
     transition: 2s;
 }
+
+/* Texto titulo do segundo container */
 .container.div2 h2{
     font-size: 30px;
     color: white;
@@ -184,12 +229,17 @@ ul a:hover{
     margin: 0; 
     padding: 30px;
 }
+
+/* Texto informativo do segundo container */
 .container.div2 p{
     font-size: 18px;
     color: white;
     text-align: justify;
     margin: -20px 30px;
 }
+
+/* Terceiro container (Imagem: Porquinho) */
+
 .container.div3{
     background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .4)), url(../imagem/lapis.jpg);
 }
@@ -197,6 +247,8 @@ ul a:hover{
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(../imagem/lapis.jpg);
     transition: 2s;
 }
+
+/* Texto titulo do terceiro container */
 .container.div3 h2{
     font-size: 30px;
     color: white;
@@ -204,12 +256,17 @@ ul a:hover{
     margin: 0; 
     padding: 30px;
 }
+
+/* Texto informativo do terceiro container */
 .container.div3 p{
     font-size: 18px;
     color: white;
     text-align: justify;
     margin: -20px 30px;
 }
+
+/* Formatação do fundo cinza com elementos de texto */
+
 #realidade{
     width: 50%;
     height: 1460px;
@@ -222,6 +279,9 @@ ul a:hover{
     box-shadow: 0 0 10px ;
     margin-bottom: 20px;
 }
+
+/* Texto h2 dentro do fundo cinza */
+
 #realidade h2:not(.no-color){
     font-size: 30px;
     font-weight: bold;
@@ -230,13 +290,18 @@ ul a:hover{
     text-decoration: underline #000000;
     margin-left: 10px;
 }
+
+/* Texto p dentro do fundo cinza */
+
 #realidade p{
     font-size: 18px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-
 }
+
+/* Lista dentro do fundo cinza */
+
 ul{
     list-style: upper-roman;
     margin-left: 35px;
@@ -252,6 +317,9 @@ ul{
     font-size: 18px;
     color: rgb(0, 0, 0);
 }
+
+/* Link da fonte embaixo do texto da lista */
+
 .fonte a{
     font-size: 15px;
     color: var(--bg-color);
@@ -259,6 +327,9 @@ ul{
 .fonte.no-color{
     margin-left: 300px;
 }
+
+/* Titulos dos graficos dentro do fundo cinza */
+
 .titulos{
     font-size: 30px;
     text-align: center;
@@ -267,26 +338,41 @@ ul{
     margin-top: 20px;
     font-weight: bold;
 }
+
+/* Formatação do primeiro grafico */
+
 .grafico{
-    margin-left: 140px;
+    margin-left: 22%;
     border-radius: 7px;
 }
+
+/* Formatação do segundo grafico */
+
 .graficos{
     margin-left: 160px;
     margin-bottom: 20px;
     border-radius: 7px;
 }
+
+/* Texto de fonte abaixo do gráfico */
+
 .fontes{
     font-size: 20px;
     margin-left: 33%;
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+/* Texto de link abaixo do gráfico */
+
 .fontes a{
     font-size: 15px;
     color: var(--bg-color);
     font-weight: bold;
 }
+
+/* Botão de download abaixo dos gráficos */
+
 .down{
     margin:50px;
     text-decoration: none;
@@ -302,6 +388,9 @@ ul{
     background-color:transparent;
     color: var(--bg-color);
 }
+
+/* Formatação do rodapé */
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -310,6 +399,8 @@ footer {
     background-color: var(--bg-color);
 }
 
+/* Formatação das 3 divs do rodapé */
+
 .box {
     width: 400px;
     height: 80px;
@@ -317,6 +408,8 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+/* Formatação do titulo dos texto das 3 divs */
 
 .inicio {
     font-size: 30px;
@@ -327,6 +420,8 @@ footer {
     margin-left: 5px;
 }
 
+/* Formatação dos links das 2 divs  */
+
 .home {
     font-size: 20px;
     padding: 5px;
@@ -334,10 +429,11 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-
 .home:hover{
     color: white;
 }
+
+/* Formatação do texto informativo da ultima div */
 
 .info{
     font-size: 20px;
