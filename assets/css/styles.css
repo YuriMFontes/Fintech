@@ -32,6 +32,7 @@ html {
 font-family: 'Kdam Thmor Pro', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-size: 62.5%;
 }
 
 /* Selection de texto */
@@ -49,7 +50,7 @@ li::selection {
 
 header{
     width: 100%;
-    height: 130px;
+    min-height: 15vh;
     top: 0;
     left: 0;
     right: 0;
@@ -67,21 +68,24 @@ header{
 body{
     background-image: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .4)), url(../imagem/background.jpeg);
     background-size: cover;
+    font-size: 1.6rem;
 }
 
 /* Titulo da página */
 
 .fintech{
-    font-size: 70px;
+    font-size: 7vmin;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--bg-color);
+    margin-right: 2vmin;
+    margin-left: 2vmin;
 }
 
 /* Subtitulo */
 
 .subt{
-    font-size: 35px;
+    font-size: 3vmin;
     font-weight: 500;
     color: var(--bg-color);
 }
@@ -89,10 +93,11 @@ body{
 /* Login e senha */
 
 ul a{
-    margin-left: 30px;
+    margin-left: 2vmin;
     transition: 1s;
     text-decoration: none;
     color: white;
+    margin-right: 1.5vmin;
 }
 ul a:hover{
     font-size: 5rem;
@@ -103,7 +108,7 @@ ul a:hover{
 
 #imagem{
     width: 90%;
-    height: var(--space-500);
+    min-height: 30vh;
     margin: 30px auto;
     padding: 30px 0;
     box-sizing: border-box;
@@ -116,7 +121,7 @@ ul a:hover{
 
 /* Texto principal da imagem da moeda */
 .texto{
-    font-size: 45px;
+    font-size: 5vmin;
     margin: 30px 40px;
     color: white;
 }
@@ -125,16 +130,14 @@ ul a:hover{
 .lorem{
     margin: 50px 40px 130px;
     width: 50%;
-    font-size: 20px;
+    font-size: 2vmin;
     color: white;
-    font-weight: 700;
     padding: 2px;
-    line-height: 1.5;
 }
 
 /* Botão saiba mais na imagem da moeda */
 .link{
-    margin:50px;
+    margin:30px;
     text-decoration: none;
     border: 2px solid var(--bg-color);
     background-color: var(--bg-color);
@@ -153,7 +156,6 @@ ul a:hover{
 .container-pai{
     margin: 1% 5%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -161,11 +163,9 @@ ul a:hover{
 
 .container{
     width: 31%;
-    height: var(--space-500);
-    display: inline-block;
-    text-align: center;
+    min-height: 30vh;
     background-position: center center;
-    margin: 15px;
+    margin: 15px auto;
     border-radius: 7px;
 }
 
@@ -180,24 +180,23 @@ ul a:hover{
 
 /* Texto titulo do primeiro container */
 .container.div1 h2{
-    font-size: 30px;
-    color: white;
-    text-align: justify; 
+    font-size: 3vmin;
+    color: white; 
     margin: 0; 
     padding: 30px;
 }
 
 /* Texto informativo do primeiro container */
 .container.div1 p{
-    font-size: 18px;
+    font-size: 2vmin;
     color: white;
     margin: -20px 30px;
-    text-align: justify;
-    margin-bottom: 290px;
+    margin-bottom: 50%;
 }
 
 /* Botão link para download do primeiro container */
 .container.div1 a{
+    margin: 30px;
     text-decoration: none;
     border: 2px solid var(--bg-color);
     background-color: var(--bg-color);
@@ -205,7 +204,6 @@ ul a:hover{
     padding: 8px 30px;
     border-radius: 7px;
     font-weight: 600;
-    margin-right: 280px;
 }
 .container.div1 a:hover{
     background-color:transparent;
@@ -223,18 +221,16 @@ ul a:hover{
 
 /* Texto titulo do segundo container */
 .container.div2 h2{
-    font-size: 30px;
+    font-size: 3vmin;
     color: white;
-    text-align: justify; 
     margin: 0; 
     padding: 30px;
 }
 
 /* Texto informativo do segundo container */
 .container.div2 p{
-    font-size: 18px;
+    font-size: 2vmin;
     color: white;
-    text-align: justify;
     margin: -20px 30px;
 }
 
@@ -250,40 +246,37 @@ ul a:hover{
 
 /* Texto titulo do terceiro container */
 .container.div3 h2{
-    font-size: 30px;
+    font-size: 3vmin;
     color: white;
-    text-align: justify; 
     margin: 0; 
     padding: 30px;
 }
 
 /* Texto informativo do terceiro container */
 .container.div3 p{
-    font-size: 18px;
+    font-size: 2vmin;
     color: white;
-    text-align: justify;
     margin: -20px 30px;
 }
 
 /* Formatação do fundo cinza com elementos de texto */
 
 #realidade{
-    width: 50%;
-    height: 1460px;
+    width: 90%;
+    height: 100%;
     color: rgb(0, 0, 0);
-    margin: 10px 25%;
+    margin: 1% 5%;
     font-weight: 600;
     text-align: left;
     background-color: rgb(199, 196, 196);
     border-radius: 10px;
     box-shadow: 0 0 10px ;
-    margin-bottom: 20px;
 }
 
 /* Texto h2 dentro do fundo cinza */
 
 #realidade h2:not(.no-color){
-    font-size: 30px;
+    font-size: 3vmin;
     font-weight: bold;
     padding: 10px;
     color: var(--bg-color);
@@ -294,7 +287,7 @@ ul a:hover{
 /* Texto p dentro do fundo cinza */
 
 #realidade p{
-    font-size: 18px;
+    font-size: 2vmin;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -307,31 +300,33 @@ ul{
     margin-left: 35px;
 }
 .credito li{
-    font-size: 20px;
+    font-size: 2vmin;
     color: var(--bg-color);
     margin-left: 10px;
     font-weight: bold;
 }
 .credito p{
     padding: 5px;
-    font-size: 18px;
+    font-size: 2vmin;
     color: rgb(0, 0, 0);
 }
 
 /* Link da fonte embaixo do texto da lista */
 
-.fonte a{
-    font-size: 15px;
-    color: var(--bg-color);
+.fontes{
+    font-size: 2vmin;
+    color: black;
+    text-align: center;
 }
-.fonte.no-color{
-    margin-left: 300px;
+.fonte {
+    font-size: 1.5vmin;
+    color: var(--bg-color);
 }
 
 /* Titulos dos graficos dentro do fundo cinza */
 
 .titulos{
-    font-size: 30px;
+    font-size: 3vmin;
     text-align: center;
     margin-bottom: 20px;
     color: white;
@@ -339,36 +334,20 @@ ul{
     font-weight: bold;
 }
 
-/* Formatação do primeiro grafico */
+/* Formatação do gráfico pai */
 
 .grafico{
-    margin-left: 22%;
-    border-radius: 7px;
-}
-
-/* Formatação do segundo grafico */
-
-.graficos{
-    margin-left: 160px;
-    margin-bottom: 20px;
-    border-radius: 7px;
-}
-
-/* Texto de fonte abaixo do gráfico */
-
-.fontes{
-    font-size: 20px;
-    margin-left: 33%;
-    font-weight: bold;
+    width: 40%;
+    height: 20vh;
+    margin-left: 30%;
     margin-bottom: 20px;
 }
 
-/* Texto de link abaixo do gráfico */
+/* Formatação do primeiro grafico */
 
-.fontes a{
-    font-size: 15px;
-    color: var(--bg-color);
-    font-weight: bold;
+.grafico img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Botão de download abaixo dos gráficos */
@@ -395,7 +374,7 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 300px;
+    height: 30vh;
     background-color: var(--bg-color);
 }
 
@@ -407,14 +386,14 @@ footer {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+    padding: 10px 40px;
 }
 
 /* Formatação do titulo dos texto das 3 divs */
 
 .inicio {
-    font-size: 30px;
+    font-size: 3vmin;
     color: white;
-    margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 5px;
@@ -423,7 +402,7 @@ footer {
 /* Formatação dos links das 2 divs  */
 
 .home {
-    font-size: 20px;
+    font-size: 2vmin;
     padding: 5px;
     color: black;
     text-decoration: none;
@@ -436,7 +415,7 @@ footer {
 /* Formatação do texto informativo da ultima div */
 
 .info{
-    font-size: 20px;
+    font-size: 2vmin;
     padding: 5px;
     color: black;
     font-weight: bold;
