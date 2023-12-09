@@ -1,30 +1,8 @@
-/* Resete pego na internet */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-}
-
 /* Formatação da fontes dentro do html todo */
 
 html {
@@ -51,9 +29,6 @@ li::selection {
 header{
     width: 100%;
     min-height: 15vh;
-    top: 0;
-    left: 0;
-    right: 0;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -196,18 +171,35 @@ ul a:hover{
 
 /* Botão link para download do primeiro container */
 .container.div1 a{
-    margin: 30px;
+    left: 10%;
+    bottom: 8%;
     text-decoration: none;
     border: 2px solid var(--bg-color);
     background-color: var(--bg-color);
     color: white;
-    padding: 8px 30px;
+    /* padding: 1vmin 2vmin; */
     border-radius: 7px;
     font-weight: 600;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 10px;
 }
 .container.div1 a:hover{
     background-color:transparent;
     color: var(--bg-color);
+}
+@media screen and (max-height: 425px){
+    .container.div1 a{
+        left: 10%;
+        bottom: 8%;
+        text-decoration: none;
+        border: 2px solid var(--bg-color);
+        background-color: var(--bg-color);
+        color: white;
+        border-radius: 7px;
+        font-weight: 600;
+        position: relative;
+    }
 }
 
 /* Segundo container (Imagem: Notas) */
@@ -328,7 +320,7 @@ ul{
 .titulos{
     font-size: 3vmin;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: white;
     margin-top: 20px;
     font-weight: bold;
@@ -353,15 +345,16 @@ ul{
 /* Botão de download abaixo dos gráficos */
 
 .down{
-    margin:50px;
+    left: 5%;
+    bottom: 20px;
+    top: 10%;
     text-decoration: none;
     border: 2px solid var(--bg-color);
     background-color: var(--bg-color);
     color: white;
-    padding: 8px 30px;
+    padding: 0.5vh 1vw;
     border-radius: 7px;
-    font-weight: 600;
-    margin-top: 10px;
+    position: relative;
 }
 .down:hover{
     background-color:transparent;
