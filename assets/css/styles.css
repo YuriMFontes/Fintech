@@ -177,28 +177,20 @@ ul a:hover{
     border: 2px solid var(--bg-color);
     background-color: var(--bg-color);
     color: white;
-    /* padding: 1vmin 2vmin; */
+    padding: 1vmin 2vmin;
     border-radius: 7px;
     font-weight: 600;
     position: relative;
     box-sizing: border-box;
-    font-size: 10px;
 }
 .container.div1 a:hover{
     background-color:transparent;
     color: var(--bg-color);
 }
-@media screen and (max-height: 425px){
+@media (max-width: 475px ){
     .container.div1 a{
-        left: 10%;
-        bottom: 8%;
-        text-decoration: none;
-        border: 2px solid var(--bg-color);
-        background-color: var(--bg-color);
-        color: white;
-        border-radius: 7px;
-        font-weight: 600;
-        position: relative;
+        font-size: 8px;
+        padding: 0.5vmin 1vmin;
     }
 }
 
