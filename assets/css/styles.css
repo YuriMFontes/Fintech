@@ -34,8 +34,6 @@ header{
     align-items: center;
     box-shadow: 0 0 20px 2px var(--bg-color);
     background-color: #212121;
-    border-bottom-left-radius: var(--space-7);
-    border-bottom-right-radius: var(--space-7);
 }
 
 /* Background */
